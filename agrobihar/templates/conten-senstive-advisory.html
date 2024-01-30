@@ -1,0 +1,177 @@
+{% include 'layouts/header.html' %}
+<div class="content">
+    <div class="bredcurmb m-0 p-0" >
+        <div class="row g-3 mb-3">
+            <nav style="--falcon-breadcrumb-divider: '»';" aria-label="breadcrumb">
+               <ol class="breadcrumb">
+                  <div>
+                     <h5 class="mb-0">Content Segment Advisory</h5>
+                  </div>
+                  <div class="d-flex align-items-center">
+                     <li class="breadcrumb-item"><a href="">Home</a></li>
+                     <li class="breadcrumb-item active" aria-current="page">Content Segment Advisory</li>
+                  </div>
+               </ol>
+            </nav>
+         </div>
+    </div>
+   <div class="row">
+      <div class="col-sm-12">
+         <div class="filter-form">
+            <form method="get">
+               <div class="row">
+                  <div class="col-md-9 pr-0">
+                     <div class="form-group">
+                        <input type="hidden" name="project_id">
+                        <input type="text" class="form-control" placeholder="Serach  Name" name="country_name" id="country_id" value="">
+                     </div>
+                  </div>
+                  <div class="col-md-2 pr-0">
+                     <button type="submit" class="btn btn-primary btn-block" id="btnsearch" name="search" disabled>Search</button>
+                  </div>
+                  <div class="col-md-1">
+                     <a href="" class="btn btn-secondary btn-block">Reset</a>
+                  </div>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+   <div class="row">
+      <div class="col-xl-12">
+         <form action="" method="POST">
+            <div class="card-box project-box pt-2">
+               <div class="row align-items-center">
+                  <div class="col-sm-5 col-md-5">
+                     <h5 class="total-data-count">Total Data (s): <strong class="text-primary">4</strong></h5>
+                  </div>
+                  <div class="col-sm-7 col-md-7 text-end">
+                     <a class="btn btn-outline-dark" href="{% url 'create_segment'%}"><span class="fas fa-plus" data-fa-transform="shrink-3 down-2"></span><span class="ms-1">Create Segment</span></a>
+                  </div>
+               </div>
+
+               <div class="table-responsive mb-0 mt-2">
+                  <table class="table table-bordered fs--1">
+                     <thead>
+                        <tr>
+                           <th class="sl-no">S. No.</th>
+                           <th>Name </th>
+                           <th class="text-center">Email </th>
+                           <th class="text-center">State </th>
+                           <th class="text-center">Crop </th>
+                           <th class="action">Action</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        
+                           <tr>
+                              <td class="text-center">1</td>
+                              <td class="text-center">
+                                 Adity Kumar
+                              </td>
+                              <td class="text-center">aditya@gmail.com</td>
+                              <td class="text-center">Bihar</td>
+                              <td class="text-center">Wheat</td>
+                              <td class="action">
+                                 <a class="btn btn-link p-0 ms-2" href="" type="button" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="View" data-bs-original-title="View"><span class="text-500 fas fa-eye"></span></a>
+                                 <a class="btn btn-link p-0 ms-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit" style="margin-right: 5px;"><span class="text-500 fas fa-pencil-alt"></span></a>
+                                 <a class="btn btn-link p-0 ms-2" href="javascript:void(0)" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete"><span class="text-500 fas fa-trash-alt"></span></a>
+                              </td>
+                           </tr>
+                           <tr>
+                            <td class="text-center">2</td>
+                            <td class="text-center">
+                               Vikash Kumar
+                            </td>
+                            <td class="text-center">vikash@gmail.com</td>
+                            <td class="text-center">Bihar</td>
+                            <td class="text-center">Wheat</td>
+                            <td class="action">
+                               <a class="btn btn-link p-0 ms-2" href="" type="button" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="View" data-bs-original-title="View"><span class="text-500 fas fa-eye"></span></a>
+                               <a class="btn btn-link p-0 ms-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit" style="margin-right: 5px;"><span class="text-500 fas fa-pencil-alt"></span></a>
+                               <a class="btn btn-link p-0 ms-2" href="javascript:void(0)" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete"><span class="text-500 fas fa-trash-alt"></span></a>
+                            </td>
+                         </tr>
+                         <tr>
+                            <td class="text-center">3</td>
+                            <td class="text-center">
+                               Madav Kumar
+                            </td>
+                            <td class="text-center">madav@gmail.com</td>
+                            <td class="text-center">Bihar</td>
+                            <td class="text-center">Wheat</td>
+                            <td class="action">
+                               <a class="btn btn-link p-0 ms-2" href="" type="button" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="View" data-bs-original-title="View"><span class="text-500 fas fa-eye"></span></a>
+                               <a class="btn btn-link p-0 ms-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit" style="margin-right: 5px;"><span class="text-500 fas fa-pencil-alt"></span></a>
+                               <a class="btn btn-link p-0 ms-2" href="javascript:void(0)" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete"><span class="text-500 fas fa-trash-alt"></span></a>
+                            </td>
+                         </tr>
+                         <tr>
+                            <td class="text-center">4</td>
+                            <td class="text-center">
+                               Deepak Kumar
+                            </td>
+                            <td class="text-center">Deepak@gmail.com</td>
+                            <td class="text-center">Bihar</td>
+                            <td class="text-center">Wheat</td>
+                            <td class="action">
+                               <a class="btn btn-link p-0 ms-2" href="" type="button" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="View" data-bs-original-title="View"><span class="text-500 fas fa-eye"></span></a>
+                               <a class="btn btn-link p-0 ms-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit" style="margin-right: 5px;"><span class="text-500 fas fa-pencil-alt"></span></a>
+                               <a class="btn btn-link p-0 ms-2" href="javascript:void(0)" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete"><span class="text-500 fas fa-trash-alt"></span></a>
+                            </td>
+                         </tr>
+                        
+                     </tbody>
+                  </table>
+               </div>
+               <div class="d-flex d-title-box-block align-items-center justify-content-between footer-paging">
+                  <div class="">
+                     <a class="btn btn-primary btn-sm waves-effect width-md waves-light" href="">
+                        <i class="fa fa-file-csv"></i> Export To CSV
+                     </a>
+                  </div>
+                  <div class="">
+                     <form method="get">
+                        <div class="d-flex align-items-center justify-content-between">
+                           <label class="m-0">Show </label>
+                           <select class="form-control form-control-sm ml-1 mr-1" id="selectap" onchange="changePerPage(this.value)">
+                              <option value="10" >10</option>
+                              <option value="50" >>50</option>
+                              <option value="100" >100</option>
+                           </select>
+                           <label class="m-0">Entries</label>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between" id="pagination">
+                     <h5 class="m-0"></h5>
+                     <ul class="pagination m-0 ml-2">
+                      
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </form>
+      </div>
+   </div>
+</div>
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script>
+   $("#country_id").on("input", function() {
+      if ($("#country_id").val() != '') {
+         $('#btnsearch').prop('disabled', false);
+      } else {
+         $('#btnsearch').prop('disabled', true);
+      }
+   });
+</script>
+<script>
+   $('#selectap').change(function() {
+      var per_page = $(this).val();
+      if (per_page != '') {
+         window.location.href = '<?= base_url('project-list') ?>' + '?per_page=' + per_page;
+      }
+   });
+</script>
+
+{% include 'layouts/footer.html' %}

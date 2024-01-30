@@ -1,0 +1,78 @@
+{% load static %}
+</div>
+</main>
+<footer class="footer bg-info">
+  <div class="container-fluid">
+    <div class="d-flex align-items-center justify-content-between fs--1 py-3">
+      <!-- <div>
+        <p class="text-600 mb-0">Total Users Visited : 4,68,260</p>
+      </div> -->
+      <div>
+        <p class="text-600 mb-0">© Copyright <script>
+            document.write(new Date().getFullYear())
+          </script> MKCF. All Rights Reserved</p>
+      </div>
+      <div>
+        <p class="text-600 mb-0">Last Updated: 05 Dec, 2023</p>
+      </div>
+      <div>
+        <p class="text-600 mb-0">Disclaimer | Privacy Policy</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- ===============================================-->
+<!--    End of Main Content-->
+<!-- ===============================================-->
+
+<!-- ===============================================-->
+<!--    JavaScripts-->
+<!-- ===============================================-->
+<script src="{% static 'vendors/popper/popper.min.js' %}"></script>
+<script src="{% static 'vendors/bootstrap/bootstrap.min.js' %}"></script>
+<script src="{% static 'vendors/anchorjs/anchor.min.js' %}"></script>
+<script src="{% static 'vendors/is/is.min.js' %}"></script>
+<script src="{% static 'vendors/echarts/echarts.min.js' %}"></script>
+<script src="{% static 'vendors/fontawesome/all.min.js' %}"></script>
+<script src="{% static 'vendors/lodash/lodash.min.js' %}"></script>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+<script src="{% static 'vendors/list.js/list.min.js' %}"></script>
+<script src="{% static 'js/theme.js' %}"></script>
+<script src="{% static 'js/dayjs.min.js' %}"></script>
+<script src="{% static 'vendors/choices/choices.min.js' %}"></script>
+<script src="{% static 'js/flatpickr.js' %}"></script>
+<script src="{% static 'js/config.js' %}"></script>
+<!-- <script src="<?= base_url() ?>/public/assets/js/echart-example.js"></script> -->
+<script src="{% static 'js/echart-example.js.map' %}"></script>
+<script src="{% static 'js/theme.js.map' %}"></script>
+<script src="{% static 'js/theme.min.js.map' %}"></script>
+<script src="{% static 'js/echarts-example.js' %}"></script>
+<script src="{% static 'js/flatpickr.js' %}"></script>
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'vendors/select2/select2.min.js' %}"></script>
+<script src="{% static 'vendors/select2/select2.full.min.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+  $(document).ready(function() {
+    <?php if (session()->getFlashdata('success')) { ?>
+      swal({
+        title: "<?= session()->getFlashdata('success') ?>",
+        icon: "success",
+        button: "OK",
+      });
+    <?php } ?>
+
+    <?php if (session()->getFlashdata('error')) { ?>
+      swal({
+        title: "<?= session()->getFlashdata('error') ?>",
+        icon: "error",
+        button: "OK",
+      });
+    <?php } ?>
+  })
+</script>
+</body>
+
+</html>
